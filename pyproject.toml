@@ -1,0 +1,24 @@
+[project]
+name = "healthhackersbackend"
+version = "0.1.0"
+description = ""
+authors = [{ name = "mocha8686", email = "june.mocha8686@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["fastapi[standard] (>=0.115.11,<0.116.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.9"
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.poetry]
+package-mode = false
